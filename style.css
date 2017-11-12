@@ -1,0 +1,165 @@
+* {
+	border: none;
+	padding: 0;
+	margin: 0;
+}
+
+html, body {
+	width: 100%;
+	height: 100%;
+}
+
+body {
+	background-color: #fafafa;
+	display: flex;
+	justify-content: center;
+	font-family: 'Lato', sans-serif;
+}
+
+hr {
+	height: 3px;
+	background-color: #ccc;
+	margin-bottom: 20px;
+}
+
+.main-wrapper {
+	max-width: 100%;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}
+
+.backpack {
+	position: relative;
+	margin: 0 30px;
+}
+
+.backpack-capacity__description {
+	position: absolute;
+	top: 200px;
+	left: 204px;	
+	font-weight: 700;
+}
+
+.backpack-capacity {
+  position: absolute;
+  top: 220px;
+  left: 218px;
+  line-height: 1.5;
+  font-size: 20px;
+  width: 60px;
+  padding: 5px 10px;
+}
+
+.products {
+	width: 400px;
+	height: 650px;
+	overflow-y: auto;
+	padding: 20px;
+	border: 3px solid #ccc;
+	border-radius: 8px;
+	position: relative;
+}
+
+.products-title {
+	font-size: 32px;
+	font-weight: 700;
+}
+
+.products-list {
+  height: 280px;
+  padding: 20px;
+  border: 2px dashed #ccc;
+  margin-bottom: 20px;
+  overflow-y: auto;
+}
+
+.btn-new-product {
+	background-color: green;
+	font-weight: 800;
+	color: #fff;
+	font-size: 18px;
+	text-decoration: none;
+	text-align: center;
+	padding: 10px 20px;
+	margin: 5px 0;
+	display: flex;
+  justify-content: center;
+}
+
+.execute-calc {
+	width: calc(100% - 80px);
+	padding: 10px 20px;
+	text-decoration: none;
+	text-align: center;
+	font-size: 20px;
+	background-color: orange;
+	color: #fff;
+	font-weight: 800;
+	display: block;
+	position: absolute;
+	bottom: 20px;
+}
+
+.product {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 20px;
+  font-size: 20px;
+	font-weight: 600;
+}
+
+.remove-product {
+	text-decoration: none;
+	padding: 0 20px;
+	line-height: 42px;
+  background-color: #ff0000;
+  color: #fff;
+  border-radius: 5px;
+}
+
+.new-product {
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	font-size: 18px;
+}
+
+.new-product__input--wrapper {
+	margin-bottom: 10px;
+}
+
+.new-product__input--wrapper {
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+}
+
+.new-product__input {
+	font-size: 16px;
+	padding: 10px 15px;
+	outline: none;
+	border: 1px solid #ccc;
+	text-transform: uppercase;
+}
+
+.result {
+    height: 400px;
+    padding: 20px;
+    background-color: #448AFF;
+    border-radius: 20px;
+    border: 6px solid #222222;
+    font-size: 30px;
+    font-weight: 600;
+    text-align: center;
+}
+
+.buy-products {
+	height: 330px;
+    overflow-y: auto;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column-reverse;
+}
