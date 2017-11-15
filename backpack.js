@@ -65,14 +65,9 @@ class BackPack {
 
 		// Loop nas linhas das matrizes, de baixo para cima
 		for (i; i > 0; i--) {
-
-			// Loop nas colunas de cada linha, da última à primeira
-			for (j; j > 0; j--) {
-				if ( this.matriz[i - 1][j] !== this.matriz[i][j] ) {
-					produtosLevados.push( this.produtos[i - 1] );
-					j -= this.produtos[i - 1]['peso'];
-					break;
-				}
+			if ( this.matriz[i - 1][j] !== this.matriz[i][j] ) {
+				produtosLevados.push( this.produtos[i - 1] );
+				j -= this.produtos[i - 1]['peso'];
 			}
 		}
 		return produtosLevados;
